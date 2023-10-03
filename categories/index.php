@@ -1,0 +1,50 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Categories");?><?$APPLICATION->IncludeComponent(
+	"sharshakov:blog", 
+	".default", 
+	array(
+		"ADD_SECTIONS_CHAIN" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "3600",
+		"CACHE_TYPE" => "A",
+		"COMPOSITE_FRAME_MODE" => "Y",
+		"COMPOSITE_FRAME_TYPE" => "AUTO",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"DISPLAY_TOP_PAGER" => "N",
+		"ELEMENT_SET_BROWSER_TITLE" => "Y",
+		"ELEMENT_SET_META_DESCRIPTION" => "Y",
+		"ELEMENT_SET_META_KEYWORDS" => "Y",
+		"ELEMENT_SET_PAGE_TITLE" => "Y",
+		"IBLOCK_ID" => "2",
+		"IBLOCK_TYPE" => "products",
+		"MESSAGE_404" => "",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Элементы",
+		"POPULAR_ELEMENT_COUNT" => "3",
+		"POPULAR_ROOT_SECTIONS" => "Y",
+		"POPULAR_SECTIONS" => array(
+		),
+		"POPULAR_SET_BROWSER_TITLE" => "Y",
+		"POPULAR_SET_PAGE_TITLE" => "Y",
+		"SECTION_ELEMENT_COUNT" => "3",
+		"SECTION_SET_BROWSER_TITLE" => "Y",
+		"SECTION_SET_META_DESCRIPTION" => "Y",
+		"SECTION_SET_META_KEYWORDS" => "Y",
+		"SECTION_SET_PAGE_TITLE" => "Y",
+		"SEF_FOLDER" => "/categories/",
+		"SEF_MODE" => "Y",
+		"SET_STATUS_404" => "Y",
+		"SHOW_404" => "N",
+		"USE_CODE_INSTEAD_ID" => "Y",
+		"COMPONENT_TEMPLATE" => ".default",
+		"SEF_URL_TEMPLATES" => array(
+			"popular" => "",
+			"section" => "#SECTION_CODE#/",
+			"element" => "#SECTION_CODE#/#ELEMENT_CODE#",
+		)
+	),
+	false
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
