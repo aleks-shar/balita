@@ -1,5 +1,7 @@
-bitrix
-balita
+bitrix/*
+balita/*
+!templates/.default/components/bitrix
+!templates/balita
 upload
 *.txt
 *.log
